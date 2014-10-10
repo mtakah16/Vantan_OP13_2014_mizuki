@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery UI Dialog - Modal form</title>
+  <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/themes/smoothness/jquery-ui.css" />
+   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+   <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+   <script src="./custom.js"></script>
+    <style>
+	#js-dialog-content{display: none;}
+    </style>
+</head>
+
+<body>
+
+	<div id="js-dialog-content">
+		<p>これはダイアログの中身です</p>
+		<form method="POST" action="user.php">
+			<input type="text" id="js-new-username" name="username" placeholder="ユーザー名" /><br />
+		</form>
+		<button id="js-new-user-submit">登録</button>
+	</div>
+	<button id="js-create-user">ユーザー登録</button> 
+</body>
+
+</html>
